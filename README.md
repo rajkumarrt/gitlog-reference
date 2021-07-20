@@ -26,19 +26,16 @@ git log --after="1 week ago"
 commit 8bcf05ee70c9fd36d0f253a5625e03edb79268ec (HEAD -> feature.xyz, origin/feature.xyz)
 Author: rajkumarrt <77945664+rajkumarrt@users.noreply.github.com>
 Date:   Wed Jul 14 18:47:53 2021 +0530
-
     update
 
 commit 35e6087965c508b137e986874ab501b20506c4d9
 Author: rajkumarrt <rajkumarrt@gamil.com>
 Date:   Wed Jul 14 09:24:24 2021 -0400
-
     test file
 
 commit 5d49fb242b5dffe21d685588ed369348ba68b484
 Author: rajkumarrt <rajkumarrt@gamil.com>
 Date:   Wed Jul 14 09:00:47 2021 -0400
-
     Index.html added
     
  <b> #Filter by Content </b>
@@ -52,17 +49,13 @@ Date:   Wed Jul 14 09:24:24 2021 -0400
 commit 5d49fb242b5dffe21d685588ed369348ba68b484
 Author: rajkumarrt <rajkumarrt@gamil.com>
 Date:   Wed Jul 14 09:00:47 2021 -0400
-
     Index.html added
-
-
 </code></pre></div>
 
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Gitlog"><pre><code>
 <b>#Merge commits </b>
 [centos@master gitpr]$ git log master..feature
 </code></pre></div>
-
 
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Gitlog"><pre><code>
 <b>#Format output </b>
@@ -88,8 +81,6 @@ rajkumarrt - 6 days ago
 rajkumarrt - 8 days ago
   101ee3f - Added the package
 
-
-
 [centos@master gitpr]$ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 * 8bcf05e - (HEAD -> feature.xyz, origin/feature.xyz) update (5 days ago) <rajkumarrt>
 * 35e6087 - test file (5 days ago) <rajkumarrt>
@@ -106,26 +97,21 @@ rajkumarrt - 8 days ago
 * 461b64c - index.js updated (8 days ago) <rajkumarrt>
 * 1df215d - First update (8 days ago) <rajkumarrt>
 
-
 [centos@master gitpr]$ git log --decorate
 commit 8bcf05ee70c9fd36d0f253a5625e03edb79268ec (HEAD -> feature.xyz, origin/feature.xyz)
 Author: rajkumarrt <77945664+rajkumarrt@users.noreply.github.com>
 Date:   Wed Jul 14 18:47:53 2021 +0530
-
     update
 
 commit 35e6087965c508b137e986874ab501b20506c4d9
 Author: rajkumarrt <rajkumarrt@gamil.com>
 Date:   Wed Jul 14 09:24:24 2021 -0400
-
     test file
 
 commit 5d49fb242b5dffe21d685588ed369348ba68b484
 Author: rajkumarrt <rajkumarrt@gamil.com>
 Date:   Wed Jul 14 09:00:47 2021 -0400
-
     Index.html added
-
 
 [centos@master gitpr]$ git shortlog
 rajkumarrt (12):
@@ -141,7 +127,6 @@ rajkumarrt (12):
       Index.html added
       test file
       update
-
 
 [centos@master gitpr]$ git reflog
 8bcf05e (HEAD -> feature.xyz, origin/feature.xyz) HEAD@{0}: rebase (continue) (finish): returning to refs/heads/feature.xyz
@@ -184,5 +169,4 @@ f8795a2 Create README.md
 9a081b1 CSS file change
 461b64c index.js updated
 1df215d First update
-
 </code></pre></div>
