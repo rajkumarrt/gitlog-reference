@@ -2,7 +2,7 @@
 Gitlog reference
 <h3> #git log</h3>
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Gitlog"><pre><code>
-[centos@master gitpr]$ git log
+[centos@master gitpr]$<body style="background-color:powderblue;"> git log </body>
 commit 8bcf05ee70c9fd36d0f253a5625e03edb79268ec (HEAD -> feature.xyz, origin/feature.xyz)
 Author: rajkumarrt <77945664+rajkumarrt@users.noreply.github.com>
 Date:   Wed Jul 14 18:47:53 2021 +0530
@@ -11,18 +11,18 @@ Date:   Wed Jul 14 18:47:53 2021 +0530
  <h3> #Filetering</h3>
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Gitlog"><pre><code>
 <b> #Filetr by Date </b>
-[centos@master gitpr]$ git log --after="2021-01-07"
+[centos@master gitpr]$<body style="background-color:powderblue;"> git log --after="2021-01-07" </body>
 commit 8bcf05ee70c9fd36d0f253a5625e03edb79268ec (HEAD -> feature.xyz, origin/feature.xyz)
 Author: rajkumarrt <77945664+rajkumarrt@users.noreply.github.com>
 Date:   Wed Jul 14 18:47:53 2021 +0530
 
-git log --after="2021-01-07" --before="2021-05-07"
+<body style="background-color:powderblue;">git log --after="2021-01-07" --before="2021-05-07"
 git log --after="today"
 git log --after="yesterday"
-git log --after="1 week ago"
+git log --after="1 week ago" </body>
 
 <b> #Filter by File </b>
-[centos@master gitpr]$ git log index.html
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git log index.html </body>
 commit 8bcf05ee70c9fd36d0f253a5625e03edb79268ec (HEAD -> feature.xyz, origin/feature.xyz)
 Author: rajkumarrt <77945664+rajkumarrt@users.noreply.github.com>
 Date:   Wed Jul 14 18:47:53 2021 +0530
@@ -39,11 +39,10 @@ Date:   Wed Jul 14 09:00:47 2021 -0400
     Index.html added
     
  <b> #Filter by Content </b>
-[centos@master gitpr]$ git log -S"This is "
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git log -S"This is " </body>
 commit 35e6087965c508b137e986874ab501b20506c4d9
 Author: rajkumarrt <rajkumarrt@gamil.com>
 Date:   Wed Jul 14 09:24:24 2021 -0400
-
     test file
 
 commit 5d49fb242b5dffe21d685588ed369348ba68b484
@@ -54,12 +53,12 @@ Date:   Wed Jul 14 09:00:47 2021 -0400
 
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Gitlog"><pre><code>
 <b>#Merge commits </b>
-[centos@master gitpr]$ git log master..feature
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git log master..feature </body>
 </code></pre></div>
 
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Gitlog"><pre><code>
 <b>#Format output </b>
-[centos@master gitpr]$ git log --pretty=format:"%Cred%an - %Cgreen%ar%n %Cblue %h -%Cgreen %s %n"
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git log --pretty=format:"%Cred%an - %Cgreen%ar%n %Cblue %h -%Cgreen %s %n" </body>
 rajkumarrt - 6 days ago
   8bcf05e - update
 
@@ -81,7 +80,7 @@ rajkumarrt - 6 days ago
 rajkumarrt - 8 days ago
   101ee3f - Added the package
 
-[centos@master gitpr]$ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit </body>
 * 8bcf05e - (HEAD -> feature.xyz, origin/feature.xyz) update (5 days ago) <rajkumarrt>
 * 35e6087 - test file (5 days ago) <rajkumarrt>
 * 5d49fb2 - Index.html added (5 days ago) <rajkumarrt>
@@ -97,7 +96,7 @@ rajkumarrt - 8 days ago
 * 461b64c - index.js updated (8 days ago) <rajkumarrt>
 * 1df215d - First update (8 days ago) <rajkumarrt>
 
-[centos@master gitpr]$ git log --decorate
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git log --decorate </body>
 commit 8bcf05ee70c9fd36d0f253a5625e03edb79268ec (HEAD -> feature.xyz, origin/feature.xyz)
 Author: rajkumarrt <77945664+rajkumarrt@users.noreply.github.com>
 Date:   Wed Jul 14 18:47:53 2021 +0530
@@ -113,7 +112,7 @@ Author: rajkumarrt <rajkumarrt@gamil.com>
 Date:   Wed Jul 14 09:00:47 2021 -0400
     Index.html added
 
-[centos@master gitpr]$ git shortlog
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git shortlog </body>
 rajkumarrt (12):
       First update
       index.js updated
@@ -128,7 +127,7 @@ rajkumarrt (12):
       test file
       update
 
-[centos@master gitpr]$ git reflog
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git reflog </body>
 8bcf05e (HEAD -> feature.xyz, origin/feature.xyz) HEAD@{0}: rebase (continue) (finish): returning to refs/heads/feature.xyz
 8bcf05e (HEAD -> feature.xyz, origin/feature.xyz) HEAD@{1}: rebase (continue): update
 35e6087 HEAD@{2}: rebase (continue): test file
@@ -156,7 +155,7 @@ f8795a2 HEAD@{19}: pull: Fast-forward
 1df215d HEAD@{25}: commit (initial): First update
 
 
-[centos@master gitpr]$ git log --oneline
+[centos@master gitpr]$ <body style="background-color:powderblue;"> git log --oneline </body>
 8bcf05e (HEAD -> feature.xyz, origin/feature.xyz) update
 35e6087 test file
 5d49fb2 Index.html added
